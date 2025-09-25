@@ -58,7 +58,7 @@ body {
 
 .hero-media { display: flex; justify-content: center; }
 .hero-card { width: 100%; max-width: 420px; background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: 16px; box-shadow: var(--shadow); }
-.hero-card-row { height: 80px; border-radius: 12px; background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0)); border: 1px solid var(--border); margin-bottom: 12px; }
+.hero-card-row { min-height: 72px; border-radius: 12px; background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0)); border: 1px solid var(--border); margin-bottom: 12px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 10px 12px; color: var(--text); font-weight: 600; font-size: 15px; letter-spacing: 0.2px; line-height: 1.3; }
 .hero-card-row:last-child { margin-bottom: 0; }
 
 .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
