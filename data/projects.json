@@ -5,7 +5,7 @@
     "shortDescription": "Integrated sensors and software for ModalAI drones performing coordinated science missions.",
     "longDescription": "Interned with NASA on a project using ModalAI drones to autonomously conduct multi-agent science missions. Designed and mounted spectrometer and volatile gas sensors with lightweight hardware, reducing payload weight by 15%. Developed Python modules using PX4 MAVSDK for I²C sensor acquisition and Docker-based telemetry logging. Contributed to autonomous science experiments with NASA’s ONAIR framework.",
     "keywords": ["UAV Systems", "PX4", "Python", "I²C Integration", "Docker", "Autonomy"],
-    "image": "nasadron1.png",
+    "image": "assets/nasadrone1.png",
     "links": [
       { "label": "ONAIR Framework", "url": "https://example.com/onair" }
     ]
@@ -16,7 +16,7 @@
     "shortDescription": "Coin-sized patch for biometric sensing with ML-driven insights.",
     "longDescription": "Led the mechanical design and packaging of Lectra’s adhesive wearable, integrating sensors for heart rate, HRV, SpO₂, and motion. Designed snap-fit housings and adhesive interfaces for comfort and durability. Directed ML pipelines for sleep, recovery, and wellness scoring. Built an LLM-powered layer to provide natural language health insights. Designs helped secure $5M in funding and multiple awards.",
     "keywords": ["Wearables", "Injection Molding", "Adhesives", "Machine Learning", "LLM Integration"],
-    "image": "lectradevice1.png",
+    "image": "assets/lectradevice1.png",
     "links": [
       { "label": "Company Website", "url": "https://example.com/lectra" }
     ]
