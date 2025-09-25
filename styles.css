@@ -54,7 +54,7 @@ body {
 .button { display: inline-block; padding: 10px 16px; border-radius: 10px; text-decoration: none; border: 1px solid var(--border); color: var(--text); transition: transform .05s ease, background .2s ease; }
 .button:hover { transform: translateY(-1px); }
 .button.primary { background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #04060a; border-color: transparent; font-weight: 600; }
-.button.ghost { background: rgba(255,255,255,0.06); }
+.button.ghost { background: rgba(173, 113, 113, 0.06); }
 
 .hero-media { display: flex; justify-content: center; }
 .hero-card { width: 100%; max-width: 420px; background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: 16px; box-shadow: var(--shadow); }
