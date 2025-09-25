@@ -1,0 +1,36 @@
+[
+  {
+    "id": "project-robot-arm",
+    "title": "6-DOF Robotic Arm",
+    "shortDescription": "Designed a compact 6-DOF arm with belt-driven joints and custom gearboxes.",
+    "longDescription": "Led end-to-end design of a 6-DOF robotic arm for pick-and-place tasks. Performed structural FEA on links and joints, tolerance analysis for bearings, and integrated stepper drivers with microcontroller-based control. Prototyped and validated repeatability (±0.4 mm).",
+    "keywords": ["CAD (SolidWorks)", "FEA (Fusion/Ansys)", "GD&T", "Rapid Prototyping", "Stepper Control"],
+    "image": "assets/placeholder.svg",
+    "links": [
+      { "label": "Design Notes", "url": "https://example.com/robot-arm-notes" },
+      { "label": "Demo Video", "url": "https://example.com/robot-arm-video" }
+    ]
+  },
+  {
+    "id": "project-cfd-duct",
+    "title": "CFD Optimization of HVAC Duct",
+    "shortDescription": "Reduced pressure drop by 23% via filleted transitions and guide vanes.",
+    "longDescription": "Conducted steady-state CFD to evaluate multiple duct geometries. Used k-ω SST turbulence model; validated results with manometer data. Final design cut pressure drop by 23% and noise by 3 dBA.",
+    "keywords": ["CFD (OpenFOAM)", "Optimization", "Prototyping", "Lab Testing"],
+    "image": "assets/placeholder.svg",
+    "links": [
+      { "label": "CFD Case", "url": "https://example.com/cfd-case" }
+    ]
+  },
+  {
+    "id": "project-gearbox",
+    "title": "Custom Planetary Gearbox",
+    "shortDescription": "High-torque, low-backlash gearbox with 3D printed housings.",
+    "longDescription": "Designed a 3-stage planetary gearbox with spur gears, achieving 81:1 ratio. Evaluated tooth stresses per AGMA; tuned infill orientations to improve stiffness. Backlash < 0.7°.",
+    "keywords": ["Gear Design", "DFAM", "Tolerancing", "Test Fixtures"],
+    "image": "assets/placeholder.svg",
+    "links": [
+      { "label": "Photos", "url": "https://example.com/gearbox-photos" }
+    ]
+  }
+]
