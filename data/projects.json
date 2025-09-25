@@ -1,36 +1,79 @@
 [
   {
-    "id": "project-robot-arm",
-    "title": "6-DOF Robotic Arm",
-    "shortDescription": "Designed a compact 6-DOF arm with belt-driven joints and custom gearboxes.",
-    "longDescription": "Led end-to-end design of a 6-DOF robotic arm for pick-and-place tasks. Performed structural FEA on links and joints, tolerance analysis for bearings, and integrated stepper drivers with microcontroller-based control. Prototyped and validated repeatability (±0.4 mm).",
-    "keywords": ["CAD (SolidWorks)", "FEA (Fusion/Ansys)", "GD&T", "Rapid Prototyping", "Stepper Control"],
-    "image": "assets/placeholder.svg",
+    "id": "project-nasa-drones",
+    "title": "NASA Multi-Agent Drone Missions",
+    "shortDescription": "Integrated sensors and software for ModalAI drones performing coordinated science missions.",
+    "longDescription": "Interned with NASA on a project using ModalAI drones to autonomously conduct multi-agent science missions. Designed and mounted spectrometer and volatile gas sensors with lightweight hardware, reducing payload weight by 15%. Developed Python modules using PX4 MAVSDK for I²C sensor acquisition and Docker-based telemetry logging. Contributed to autonomous science experiments with NASA’s ONAIR framework.",
+    "keywords": ["UAV Systems", "PX4", "Python", "I²C Integration", "Docker", "Autonomy"],
+    "image": "assets/nasa-drones.svg",
     "links": [
-      { "label": "Design Notes", "url": "https://example.com/robot-arm-notes" },
-      { "label": "Demo Video", "url": "https://example.com/robot-arm-video" }
+      { "label": "ONAIR Framework", "url": "https://example.com/onair" }
     ]
   },
   {
-    "id": "project-cfd-duct",
-    "title": "CFD Optimization of HVAC Duct",
-    "shortDescription": "Reduced pressure drop by 23% via filleted transitions and guide vanes.",
-    "longDescription": "Conducted steady-state CFD to evaluate multiple duct geometries. Used k-ω SST turbulence model; validated results with manometer data. Final design cut pressure drop by 23% and noise by 3 dBA.",
-    "keywords": ["CFD (OpenFOAM)", "Optimization", "Prototyping", "Lab Testing"],
-    "image": "assets/placeholder.svg",
+    "id": "project-lectra-device",
+    "title": "Lectra Wearable Health Device",
+    "shortDescription": "Coin-sized patch for biometric sensing with ML-driven insights.",
+    "longDescription": "Led the mechanical design and packaging of Lectra’s adhesive wearable, integrating sensors for heart rate, HRV, SpO₂, and motion. Designed snap-fit housings and adhesive interfaces for comfort and durability. Directed ML pipelines for sleep, recovery, and wellness scoring. Built an LLM-powered layer to provide natural language health insights. Designs helped secure $5M in funding and multiple awards.",
+    "keywords": ["Wearables", "Injection Molding", "Adhesives", "Machine Learning", "LLM Integration"],
+    "image": "assets/lectra-device.svg",
     "links": [
-      { "label": "CFD Case", "url": "https://example.com/cfd-case" }
+      { "label": "Company Website", "url": "https://example.com/lectra" }
     ]
   },
   {
-    "id": "project-gearbox",
-    "title": "Custom Planetary Gearbox",
-    "shortDescription": "High-torque, low-backlash gearbox with 3D printed housings.",
-    "longDescription": "Designed a 3-stage planetary gearbox with spur gears, achieving 81:1 ratio. Evaluated tooth stresses per AGMA; tuned infill orientations to improve stiffness. Backlash < 0.7°.",
-    "keywords": ["Gear Design", "DFAM", "Tolerancing", "Test Fixtures"],
-    "image": "assets/placeholder.svg",
+    "id": "project-apl-ballasting",
+    "title": "JHUAPL Ballasting & Cam Generator",
+    "shortDescription": "Developed optimization software for re-entry vehicles and cam profile generator for mechanisms.",
+    "longDescription": "At JHUAPL, created a cam profile generator that allowed engineers to specify motion requirements and export designs directly to CAD (Creo/SolidWorks), cutting prototyping time. Also built a genetic algorithm to optimize re-entry vehicle ballasting for the Trident missile, improving stability and accuracy. Work combined dynamics, mechanics, and algorithmic optimization.",
+    "keywords": ["Genetic Algorithms", "Dynamics", "Creo/SolidWorks", "Optimization", "Mechanisms"],
+    "image": "assets/apl-project.svg",
     "links": [
-      { "label": "Photos", "url": "https://example.com/gearbox-photos" }
+      { "label": "Cam Notes", "url": "https://example.com/cam-generator" }
+    ]
+  },
+  {
+    "id": "project-2007-robot",
+    "title": "MIT 2.007 Competition Robot",
+    "shortDescription": "Designed and fabricated a modular robot with geared actuators for competition tasks.",
+    "longDescription": "Designed, machined, and assembled a competition robot with modular subsystems. Applied dynamics and torque-curve analysis to select motors and gear reductions. Fabricated custom parts using mills, lathes, and bending processes. Integrated sensors and microcontrollers for autonomous scoring. Every component was self-designed and manufactured, then integrated for full system performance.",
+    "keywords": ["Mechatronics", "Machining", "Dynamics", "Gear Design", "Controls"],
+    "image": "assets/2007-robot.svg",
+    "links": [
+      { "label": "Competition Page", "url": "https://example.com/2007-robot" }
+    ]
+  },
+  {
+    "id": "project-2671-propeller",
+    "title": "MIT 2.671 Propeller Pitch Study",
+    "shortDescription": "Built thrust rig to study propeller efficiency vs. blade pitch.",
+    "longDescription": "Constructed an experimental rig with BLDC motor, variable-pitch propeller, and Vernier sensors to study thrust and efficiency as a function of blade pitch. Logged high-frequency voltage, current, and force data. Modeled thrust vs. throttle using nonlinear regression, and performed uncertainty analysis. Results showed trade-offs between efficiency and thrust across pitch angles.",
+    "keywords": ["Experimental Methods", "Propulsion", "Data Acquisition", "Regression Analysis"],
+    "image": "assets/2671-propeller.svg",
+    "links": [
+      { "label": "Lab Report", "url": "https://example.com/2671-propeller" }
+    ]
+  },
+  {
+    "id": "project-combat-robot",
+    "title": "Combat Robot – Horizontal Spinner",
+    "shortDescription": "Designed and built a weaponized combat robot with a horizontal spinning bar.",
+    "longDescription": "Developed a combat robot featuring a horizontal spinner for high-impact competition. Designed drivetrain, chassis, and spinner assembly for durability under impact loading. Integrated motor controllers and battery protection. Fabricated custom aluminum and steel components, balancing weight vs. structural resilience. Performed destructive testing to validate performance.",
+    "keywords": ["Combat Robotics", "Mechanisms", "High-Load Design", "Fabrication", "Controls"],
+    "image": "assets/combat-robot.svg",
+    "links": [
+      { "label": "Match Video", "url": "https://example.com/combat-robot" }
+    ]
+  },
+  {
+    "id": "project-simulator",
+    "title": "Autonomous Vehicle Simulator",
+    "shortDescription": "Developed Python-based 2D simulator with LiDAR, occupancy grid, and path planning.",
+    "longDescription": "Built a modular Python simulator to test autonomous navigation algorithms. Implemented LiDAR sensing, occupancy grid mapping, and A* pathfinding. Added a pure pursuit controller for trajectory following. Designed flexible YAML-based vehicle configs. Later expanded to support multi-agent simulations with ROS2 and Dockerized deployment.",
+    "keywords": ["Python", "Simulation", "LiDAR", "Path Planning", "ROS2"],
+    "image": "assets/simulator.svg",
+    "links": [
+      { "label": "GitHub Repo", "url": "https://example.com/simulator" }
     ]
   }
 ]
