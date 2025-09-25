@@ -18,7 +18,7 @@
     "longDescription": "Led the mechanical design and packaging of Lectra’s adhesive wearable, integrating sensors for heart rate, HRV, SpO₂, and motion. Designed snap-fit housings and adhesive interfaces for comfort and durability. Directed ML pipelines for sleep, recovery, and wellness scoring. Built an LLM-powered layer to provide natural language health insights. Designs helped secure $5M in funding and multiple awards.",
     "keywords": ["Wearables", "Injection Molding", "Adhesives", "Machine Learning", "LLM Integration"],
     "image": "assets/lectra.png",
-    "images": ["assets/lectra.png", "assets/placeholder.svg"],
+    "images": ["assets/lectra.png", "assets/lectra2.png"],
     "links": [
       { "label": "Company Website", "url": "https://example.com/lectra" }
     ]
@@ -30,7 +30,7 @@
     "longDescription": "At JHUAPL, created a cam profile generator that allowed engineers to specify motion requirements and export designs directly to CAD (Creo/SolidWorks), cutting prototyping time. Also built a genetic algorithm to optimize re-entry vehicle ballasting for the Trident missile, improving stability and accuracy. Work combined dynamics, mechanics, and algorithmic optimization.",
     "keywords": ["Genetic Algorithms", "Dynamics", "Creo/SolidWorks", "Optimization", "Mechanisms"],
     "image": "assets/apl2.png",
-    "images": ["assets/apl2.png", "assets/placeholder.svg"],
+    "images": ["assets/apl2.png", "assets/apl3.png"],
     "links": [
       { "label": "Cam Notes", "url": "https://example.com/cam-generator" }
     ]
@@ -42,7 +42,7 @@
     "longDescription": "Designed, machined, and assembled a competition robot with modular subsystems. Applied dynamics and torque-curve analysis to select motors and gear reductions. Fabricated custom parts using mills, lathes, and bending processes. Integrated sensors and microcontrollers for autonomous scoring. Every component was self-designed and manufactured, then integrated for full system performance.",
     "keywords": ["Mechatronics", "Machining", "Dynamics", "Gear Design", "Controls"],
     "image": "assets/2007_1.png",
-    "images": ["assets/2007_1.png", "assets/placeholder.svg", "assets/placeholder.svg"],
+    "images": ["assets/2007_1.png", "assets/2007_2.png", "assets/2007_3.png"],
     "links": [
       { "label": "Competition Page", "url": "https://example.com/2007-robot" }
     ]
