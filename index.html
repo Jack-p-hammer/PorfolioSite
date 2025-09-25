@@ -60,6 +60,15 @@
             <p>Selected work across design, analysis, prototyping, and testing.</p>
           </div>
 
+          <div class="search-filter-section">
+            <div class="search-container">
+              <input type="text" id="search-input" class="search-input" placeholder="Search projects by title, description, or keywords..." aria-label="Search projects">
+            </div>
+            <div class="filter-buttons" id="filter-buttons">
+              <button class="filter-btn active" data-filter="all">All</button>
+            </div>
+          </div>
+
           <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
         </div>
       </section>
@@ -104,7 +113,12 @@
       <div class="modal-dialog" role="document">
         <button class="modal-close" aria-label="Close" data-close="modal">×</button>
         <div class="modal-content">
-          <img id="modal-image" alt="Project image" />
+          <div class="slideshow-container" id="modal-slideshow">
+            <img id="modal-image" alt="Project image" class="slideshow-image active" />
+            <button class="slideshow-arrows slideshow-arrow-left" id="prev-slide" aria-label="Previous image">‹</button>
+            <button class="slideshow-arrows slideshow-arrow-right" id="next-slide" aria-label="Next image">›</button>
+            <div class="slideshow-nav" id="slideshow-nav"></div>
+          </div>
           <div class="modal-body">
             <h3 id="modal-title"></h3>
             <p id="modal-description"></p>

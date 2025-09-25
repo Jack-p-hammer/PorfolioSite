@@ -27,7 +27,7 @@
     "shortDescription": "Developed optimization software for re-entry vehicles and cam profile generator for mechanisms.",
     "longDescription": "At JHUAPL, created a cam profile generator that allowed engineers to specify motion requirements and export designs directly to CAD (Creo/SolidWorks), cutting prototyping time. Also built a genetic algorithm to optimize re-entry vehicle ballasting for the Trident missile, improving stability and accuracy. Work combined dynamics, mechanics, and algorithmic optimization.",
     "keywords": ["Genetic Algorithms", "Dynamics", "Creo/SolidWorks", "Optimization", "Mechanisms"],
-    "image": "assets/apl1.png",
+    "image": "assets/apl2.png",
     "links": [
       { "label": "Cam Notes", "url": "https://example.com/cam-generator" }
     ]
