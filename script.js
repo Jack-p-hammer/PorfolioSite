@@ -306,10 +306,27 @@ function initModalBehavior() {
   });
 }
 
+function initSearchAndFilter() {
+  const searchInput = document.getElementById('search-input');
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      state.searchTerm = e.target.value;
+      filterProjects();
+    });
+  }
+  
+  // Add click handler for "All" filter button
+  const allFilterBtn = document.querySelector('[data-filter="all"]');
+  if (allFilterBtn) {
+    allFilterBtn.addEventListener('click', () => setFilter('all'));
+  }
+}
+
 function init() {
   setYear();
   initNavToggle();
   initModalBehavior();
+  initSearchAndFilter();
   loadProjects();
 }
 
