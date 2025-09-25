@@ -31,12 +31,18 @@ Open `index.html` in a browser, or serve with a simple HTTP server to avoid CORS
 
 ## Deploy to GitHub Pages
 
-1. Create a new public repo, e.g., `username.github.io` or any repo name.
-2. Commit all files to the repo root (or to `/docs` if you prefer Pages from docs).
+1. Create a new public repo, e.g., `username.github.io` (user/organization site) or any repo name (project site).
+2. Commit all files to the repo root (or to `/docs` if you choose to serve from docs).
 3. In GitHub → Settings → Pages:
-   - For `username.github.io` repo: Source = `main`/`master`, folder = `/`.
-   - For other repos: Source = `main`/`master`, folder = `/root` or `/docs` as configured.
-4. Wait a minute, then visit your site at `https://<username>.github.io/` (or `https://<username>.github.io/<repo>/`).
+   - For a `username.github.io` repo (user/organization site):
+     - Source: Deploy from branch
+     - Branch: `main` (or `master`)
+     - Folder: `/(root)`
+   - For other repos (project sites), choose ONE of the following:
+     - Option A: Keep site files at the repository top-level → set Folder to `/(root)`
+     - Option B: Put site files in a `/docs` folder → set Folder to `/docs`
+   - Note: You do NOT create a folder named `root`. `/(root)` simply means the top-level of the repository.
+4. Wait a minute, then visit your site at `https://<username>.github.io/` or `https://<username>.github.io/<repo>/`.
 
 ## Notes
 
