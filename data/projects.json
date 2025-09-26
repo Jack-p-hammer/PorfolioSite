@@ -43,7 +43,7 @@
     "longDescription": "As an intern at JHUAPL, I leveraged ML optimization techniques to get the proper amount of ballasting of a hyper-sonic reentry vehicle on the trident missile system. Used a genetic algorithm to quickly find the correct answer",
     "keywords": ["Machine Learning", "Optimization", "Programming", "Vehicle Design"],
     "image": "assets/apl-reentry.png",
-    "images": ["assets/apl_reentry.png"],
+    "images": ["assets/apl-reentry.png"],
     "links": [
       { }
     ]
