@@ -31,7 +31,8 @@ body {
 
 .section { padding: 80px 0; }
 .section-head { margin-bottom: 28px; }
-.section-head h2 { margin: 0 0 8px; font-size: 32px; letter-spacing: 0.2px; }
+.section-head h2 { margin: 0 0 8px; font-size: 32px; letter-spacing: 0.2px; position: relative; }
+.section-head h2::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 40px; height: 3px; background: linear-gradient(90deg, var(--muted), var(--brand)); border-radius: 2px; }
 .section-head p { margin: 0; color: var(--muted); }
 
 .site-header {
@@ -41,13 +42,13 @@ body {
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
 .brand { display: inline-flex; gap: 10px; align-items: center; color: var(--text); text-decoration: none; }
-.brand-logo { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 8px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); font-weight: 700; }
+.brand-logo { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 8px; background: linear-gradient(135deg, var(--muted), var(--brand)); font-weight: 700; }
 .brand-text { font-weight: 600; letter-spacing: 0.2px; }
 
 .nav-toggle { display: none; background: transparent; border: none; color: var(--text); font-size: 22px; }
 .nav-menu { display: flex; list-style: none; gap: 16px; margin: 0; padding: 0; }
 .nav-menu a { color: var(--text); text-decoration: none; padding: 8px 12px; border-radius: 8px; }
-.nav-menu a:hover { background: var(--panel); }
+.nav-menu a:hover { background: rgba(96,108,56,0.1); color: var(--muted); }
 
 .hero { padding: 86px 0 64px; }
 .hero-inner { display: grid; grid-template-columns: 1.2fr 1fr; gap: 36px; align-items: center; }
@@ -62,18 +63,22 @@ body {
 
 .hero-media { display: flex; justify-content: center; }
 .hero-card { width: 100%; max-width: 420px; background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: 16px; box-shadow: var(--shadow); }
-.hero-card-row { min-height: 72px; border-radius: 12px; background: var(--accent); border: 1px solid var(--border); margin-bottom: 12px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 10px 12px; color: var(--text); font-weight: 600; font-size: 15px; letter-spacing: 0.2px; line-height: 1.3; }
+.hero-card-row { min-height: 72px; border-radius: 12px; background: var(--accent); border: 1px solid var(--border); margin-bottom: 12px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 10px 12px; color: var(--text); font-weight: 600; font-size: 15px; letter-spacing: 0.2px; line-height: 1.3; position: relative; }
+.hero-card-row::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--muted); border-radius: 12px 0 0 12px; }
 .hero-card-row:last-child { margin-bottom: 0; }
 
 .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-.project-card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; transition: transform .1s ease, box-shadow .2s ease, border-color .2s ease; cursor: pointer; }
+.project-card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; transition: transform .1s ease, box-shadow .2s ease, border-color .2s ease; cursor: pointer; position: relative; }
+.project-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--muted), var(--brand)); opacity: 0; transition: opacity 0.2s ease; }
+.project-card:hover::before { opacity: 1; }
 .project-card:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.12); border-color: rgba(221,161,94,0.3); }
 .project-thumb { width: 100%; aspect-ratio: 16/9; object-fit: cover; background: var(--accent); }
 .project-body { padding: 14px; }
 .project-title { margin: 0 0 6px; font-size: 18px; }
 .project-desc { margin: 0 0 10px; color: var(--muted); }
 .tag-list { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
-.tag { font-size: 12px; color: var(--text); border: 1px solid var(--border); background: var(--accent); padding: 4px 8px; border-radius: 999px; }
+.tag { font-size: 12px; color: var(--text); border: 1px solid var(--muted); background: rgba(96,108,56,0.1); padding: 4px 8px; border-radius: 999px; transition: all 0.2s ease; }
+.tag:hover { background: rgba(96,108,56,0.2); border-color: var(--muted); }
 
 .contact-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
 .contact-card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 14px; color: var(--text); text-decoration: none; transition: border-color .2s ease, transform .1s ease; }
@@ -81,7 +86,7 @@ body {
 .contact-label { color: var(--muted); font-size: 12px; }
 .contact-value { font-weight: 600; margin-top: 4px; }
 
-.site-footer { border-top: 1px solid var(--border); padding: 24px 0; color: var(--muted); }
+.site-footer { border-top: 2px solid var(--muted); padding: 24px 0; color: var(--muted); background: rgba(96,108,56,0.05); }
 .footer-inner { display: flex; align-items: center; justify-content: center; }
 
 .modal { position: fixed; inset: 0; display: none; }
@@ -126,8 +131,8 @@ body {
 
 .search-input:focus { 
   outline: none; 
-  border-color: var(--search-focus); 
-  box-shadow: 0 0 0 3px rgba(49,130,206,0.1);
+  border-color: var(--muted); 
+  box-shadow: 0 0 0 3px rgba(96,108,56,0.1);
   transform: translateY(-1px);
 }
 
@@ -179,14 +184,14 @@ body {
 }
 
 .filter-dropdown-btn:hover {
-  border-color: var(--brand);
+  border-color: var(--muted);
   transform: translateY(-1px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
 
 .filter-dropdown-btn.active {
-  border-color: var(--brand);
-  background: var(--accent);
+  border-color: var(--muted);
+  background: rgba(96,108,56,0.1);
 }
 
 .filter-dropdown-content {
@@ -222,7 +227,7 @@ body {
 }
 
 .filter-option:hover {
-  background: var(--accent);
+  background: rgba(96,108,56,0.1);
 }
 
 .filter-option.active {
