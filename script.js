@@ -226,8 +226,8 @@ function goToSlide(index) {
 }
 
 function setupFilterButtons() {
-  const filterContainer = document.getElementById('filter-buttons');
-  if (!filterContainer) return;
+  const filterDropdownContent = document.getElementById('filter-dropdown-content');
+  if (!filterDropdownContent) return;
   
   // Get all unique keywords from projects
   const allKeywords = new Set();
@@ -235,24 +235,39 @@ function setupFilterButtons() {
     (project.keywords || []).forEach(keyword => allKeywords.add(keyword));
   });
   
-  // Create filter buttons for each keyword
+  // Create filter options for each keyword
   allKeywords.forEach(keyword => {
-    const button = document.createElement('button');
-    button.className = 'filter-btn';
-    button.textContent = keyword;
-    button.setAttribute('data-filter', keyword);
-    button.addEventListener('click', () => setFilter(keyword));
-    filterContainer.appendChild(button);
+    const option = document.createElement('div');
+    option.className = 'filter-option';
+    option.textContent = keyword;
+    option.setAttribute('data-filter', keyword);
+    option.addEventListener('click', () => setFilter(keyword));
+    filterDropdownContent.appendChild(option);
   });
 }
 
 function setFilter(filter) {
   state.activeFilter = filter;
   
-  // Update button states
-  document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.getAttribute('data-filter') === filter);
+  // Update dropdown text
+  const dropdownText = document.getElementById('filter-dropdown-text');
+  const dropdownBtn = document.getElementById('filter-dropdown-btn');
+  const dropdownContent = document.getElementById('filter-dropdown-content');
+  
+  if (filter === 'all') {
+    dropdownText.textContent = 'All Projects';
+  } else {
+    dropdownText.textContent = filter;
+  }
+  
+  // Update option states
+  document.querySelectorAll('.filter-option').forEach(option => {
+    option.classList.toggle('active', option.getAttribute('data-filter') === filter);
   });
+  
+  // Close dropdown
+  dropdownContent.classList.remove('show');
+  dropdownBtn.classList.remove('active');
   
   filterProjects();
 }
@@ -315,10 +330,30 @@ function initSearchAndFilter() {
     });
   }
   
-  // Add click handler for "All" filter button
-  const allFilterBtn = document.querySelector('[data-filter="all"]');
-  if (allFilterBtn) {
-    allFilterBtn.addEventListener('click', () => setFilter('all'));
+  // Add click handler for dropdown button
+  const dropdownBtn = document.getElementById('filter-dropdown-btn');
+  const dropdownContent = document.getElementById('filter-dropdown-content');
+  
+  if (dropdownBtn && dropdownContent) {
+    dropdownBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdownContent.classList.toggle('show');
+      dropdownBtn.classList.toggle('active');
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!dropdownBtn.contains(e.target) && !dropdownContent.contains(e.target)) {
+        dropdownContent.classList.remove('show');
+        dropdownBtn.classList.remove('active');
+      }
+    });
+  }
+  
+  // Add click handler for "All" filter option
+  const allFilterOption = document.querySelector('[data-filter="all"]');
+  if (allFilterOption) {
+    allFilterOption.addEventListener('click', () => setFilter('all'));
   }
 }
 
