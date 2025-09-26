@@ -6,9 +6,10 @@
     "longDescription": "Interned with NASA on a project using ModalAI drones to autonomously conduct multi-agent science missions. Designed and mounted spectrometer and volatile gas sensors with lightweight hardware, reducing payload weight by 15%. Developed Python modules using PX4 MAVSDK for I²C sensor acquisition and Docker-based telemetry logging. Contributed to autonomous science experiments with NASA’s ONAIR framework.",
     "keywords": ["UAV Systems", "PX4", "Python", "I²C", "Docker", "Autonomy"],
     "image": "assets/nasadrone1.png",
-    "images": ["assets/nasadrone1.png", "assets/nasadrone2"],
+    "images": ["assets/nasadrone1.png", "assets/nasadrone2.png"],
     "links": [
-      { "label": "ONAIR Framework", "url": "https://spacenews.com/nasa-spar-lab-shares-ai-tool-for-spacecraft/" }
+      { "label": "SPAR Lab News", "url": "https://spacenews.com/nasa-spar-lab-shares-ai-tool-for-spacecraft/" },
+      { "label": "ONAIR Framework", "url": "https://github.com/nasa/OnAIR" }
     ]
   },
   {
@@ -36,6 +37,18 @@
     ]
   },
   {
+    "id": "project-apl-ballasting",
+    "title": "JHUAPL ML Optimizer",
+    "shortDescription": "Developed machine learning based optimizer for the ballasting of a hyper-sonic reentry vehicle.",
+    "longDescription": "As an intern at JHUAPL, I leveraged ML optimization techniques to get the proper amount of ballasting of a hyper-sonic reentry vehicle on the trident missile system. Used a genetic algorithm to quickly find the correct answer",
+    "keywords": ["Machine Learning", "Optimization", "Programming", "Vehicle Design"],
+    "image": "assets/apl-reentry.png",
+    "images": ["assets/apl_reentry.png"],
+    "links": [
+      { }
+    ]
+  },
+  {
     "id": "project-2007-robot",
     "title": "MIT 2.007 Competition Robot",
     "shortDescription": "Designed and fabricated a modular robot with geared actuators for competition tasks. Placed top 8 in competition against 150+ students.",
@@ -53,8 +66,20 @@
     "shortDescription": "Built thrust rig to study propeller efficiency vs. blade pitch.",
     "longDescription": "Constructed an experimental rig with BLDC motor, variable-pitch propeller, and Vernier sensors to study thrust and efficiency as a function of blade pitch. Logged high-frequency voltage, current, and force data. Modeled thrust vs. throttle using nonlinear regression, and performed uncertainty analysis. Results showed trade-offs between efficiency and thrust across pitch angles.",
     "keywords": ["Experimental Methods", "Propulsion", "Data Acquisition", "Regression Analysis"],
-    "image": "assets/Final Poster.jpg",
+    "image": "assets/2671Poster.png",
     "images": ["assets/2671poster.png"],
+    "links": [
+      { }
+    ]
+  },
+  {
+    "id": "project-2155-ML/AI",
+    "title": "MIT 2.155 AI/ML Final Project",
+    "shortDescription": "Used ML to forcast wind data for green energy devlopers",
+    "longDescription": "Studied weather patters in a specific location and conducted data analysis to determine the correct model architecture. Used an LSTM to correctly model the wind over the next 24hours with high success rate.",
+    "keywords": ["Machine Learning", "Data Analysis", "AI", "Paper Writing"],
+    "image": "assets/Final Poster.jpg",
+    "images": ["assets/Final Poster.jpg"],
     "links": [
       { }
     ]
@@ -70,5 +95,17 @@
     "links": [
       { "label": "GitHub Repo", "url": "https://github.com/Jack-p-hammer/GroundRobotSimulator" }
     ]
-  }
+  },
+  {
+    "id": "new-number-generator",
+    "title": "Using AI to Create a New Number",
+    "shortDescription": "Created an AI trained on handwritten numbers to create a new number",
+    "longDescription": "By using a Variational Auto Encoder on the classic MNIST data set, I was able to sample the latent space in places that dont recreate the typical 0-9 digits. I created a new number I call Zleven!",
+    "keywords": ["AI", "Machine Learning", "Neural Networks"],
+    "image": "assets/vaelatent.png",
+    "images": ["assets/vaelatent.png", "assets/Zleven.png"],
+    "links": [
+      { "label": "GitHub Repo", "url": "https://github.com/Jack-p-hammer/Creating_New_Numbers" }
+    ]
+  } 
 ]
