@@ -33,7 +33,6 @@
     "image": "assets/apl2.png",
     "images": ["assets/apl2.png", "assets/apl3.png"],
     "links": [
-      { }
     ]
   },
   {
@@ -45,7 +44,7 @@
     "image": "assets/apl-reentry.png",
     "images": ["assets/apl-reentry.png"],
     "links": [
-      { }
+      
     ]
   },
   {
@@ -69,7 +68,7 @@
     "image": "assets/2671Poster.png",
     "images": ["assets/2671poster.png"],
     "links": [
-      { }
+      
     ]
   },
   {
@@ -81,7 +80,7 @@
     "image": "assets/Final Poster.jpg",
     "images": ["assets/Final Poster.jpg"],
     "links": [
-      { }
+      
     ]
   },
   {
