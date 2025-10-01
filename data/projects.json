@@ -9,7 +9,8 @@
     "images": ["assets/nasadrone1.png", "assets/nasadrone2.png"],
     "links": [
       { "label": "SPAR Lab News", "url": "https://spacenews.com/nasa-spar-lab-shares-ai-tool-for-spacecraft/" },
-      { "label": "ONAIR Framework", "url": "https://github.com/nasa/OnAIR" }
+      { "label": "ONAIR Framework", "url": "https://github.com/nasa/OnAIR" },
+      { "label": "Resulting Paper", "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1002/aaai.70020" }
     ]
   },
   {
